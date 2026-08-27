@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geografia Bíblica EBD — Aulas que as crianças enxergam, entendem e lembram</title>
+<meta name="description" content="Guia visual de geografia bíblica para professores de EBD: mapas, reconstruções 3D e cenários bíblicos prontos para usar em sala, do Gênesis ao Apocalipse.">
+<script>
+  /* =========================================================
+     CONFIGURAÇÃO — PREENCHA ANTES DE PUBLICAR
+     ========================================================= */
+  window.EBD_CONFIG = {
+    metaPixelId: '1065284919542764',
+    checkoutBasic: 'https://pay.wiapy.com/hdMoHHmCsDBJ',
+    checkoutComplete: 'https://pay.wiapy.com/-lj7Rw0Hvb6c',
+    checkoutUpgrade: 'https://pay.wiapy.com/6bTerw0Gok0e'
+  };
+
+  // Carrega o Meta Pixel somente quando o Pixel ID real foi informado.
+  (function(w,d,s,l,i){
+    if(!i || i === 'COLOQUE_SEU_META_PIXEL_ID') return;
+    w[l]=w[l]||[]; w[l].push({'fbq.start':new Date().getTime(),event:'fbq.js'});
+    var f=d.getElementsByTagName(s)[0], j=d.createElement(s); j.async=true;
+    j.src='https://connect.facebook.net/en_US/fbevents.js';
+    f.parentNode.insertBefore(j,f);
+    w.fbq=function(){w.fbq.callMethod?w.fbq.callMethod.apply(w.fbq,arguments):w.fbq.queue.push(arguments)};
+    if(!w._fbq) w._fbq=w.fbq;
+    w.fbq.push=w.fbq; w.fbq.loaded=true; w.fbq.version='2.0'; w.fbq.queue=[];
+    fbq('init', i);
+    fbq('track', 'PageView');
+  })(window, document, 'script', 'fbq', window.EBD_CONFIG.metaPixelId);
+</script>
+<noscript id="meta-pixel-noscript"></noscript>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0A0F1C;
+    --bg-alt:#0D1526;
+    --surface:#121B30;
+    --surface-2:#182541;
+    --border-gold: rgba(199,162,72,.28);
+    --border-gold-strong: rgba(199,162,72,.55);
+    --gold:#C7A248;
+    --gold-light:#E8CA7B;
+    --cream:#F2ECDD;
+    --muted:#93A0BC;
+    --muted-2:#6E7A96;
+    --green:#3FA76B;
+    --green-bg: rgba(63,167,107,.12);
+    --red:#D9776B;
+    --shadow-gold: 0 0 60px -15px rgba(199,162,72,.25);
+    --radius: 18px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  html, body{ max-width:100%; overflow-x:hidden; }
+  body{
+    background:
+      radial-gradient(ellipse 900px 500px at 50% 0%, rgba(199,162,72,.07), transparent 60%),
+      var(--bg);
+    color:var(--cream);
+    font-family:'Crimson Pro', Georgia, serif;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.display{ font-family:'Cinzel', serif; letter-spacing:.01em; font-weight:700; }
+  .eyebrow{ font-family:'Inter', sans-serif; font-size:.72rem; letter-spacing:.18em; text-transform:uppercase; font-weight:600; }
+  .btn, .pill, .badge, .stat-label, nav, .plan-cta, .faq-q, .footer-fine{ font-family:'Inter', sans-serif; }
+  a{ color:inherit; text-decoration:none; }
+  img{max-width:100%; display:block;}
+  .wrap{ max-width:760px; margin:0 auto; padding:0 20px; }
+  .wrap-wide{ max-width:1040px; margin:0 auto; padding:0 20px; }
+  section{ padding:72px 0; position:relative; }
+  .center{ text-align:center; }
+  .gold{ color:var(--gold); }
+  .muted{ color:var(--muted); }
+
+  /* Waypoint divider — signature element: the four stages of the offer's own mechanism */
+  .waypoint{ display:flex; align-items:center; justify-content:center; gap:14px; margin: 0 auto 8px; max-width:520px; padding: 0 20px; }
+  .waypoint .line{ flex:1; height:1px; background:linear-gradient(90deg, transparent, var(--border-gold-strong), transparent); }
+  .waypoint .chip{
+    display:flex; align-items:center; gap:8px; white-space:nowrap;
+    border:1px solid var(--border-gold); background:var(--surface);
+    padding:7px 16px; border-radius:999px;
+    font-family:'Inter',sans-serif; font-size:.68rem; letter-spacing:.15em; text-transform:uppercase; font-weight:600; color:var(--gold-light);
+  }
+  .waypoint .chip .n{ color:var(--muted-2); font-weight:700; }
+
+  /* NAV */
+  nav{ position:sticky; top:0; z-index:50; backdrop-filter: blur(10px); background:rgba(10,15,28,.85); border-bottom:1px solid var(--border-gold); }
+  nav .inner{ max-width:1040px; margin:0 auto; padding:16px 20px; display:flex; align-items:center; justify-content:space-between; }
+  .brand{ font-family:'Cinzel',serif; font-weight:700; font-size:1.02rem; letter-spacing:.03em; }
+  .brand span{ color:var(--gold); }
+  .nav-cta{ background:var(--gold); color:#191204; padding:10px 20px; border-radius:8px; font-weight:700; font-size:.82rem; letter-spacing:.02em; }
+
+  /* HERO */
+  .hero{ padding-top:56px; text-align:center; }
+  .stars{ color:var(--gold); letter-spacing:.25em; font-size:.95rem; margin-bottom:14px; }
+  .hero-eyebrow{ color:var(--muted); font-size:.95rem; margin-bottom:22px; }
+  .hero-eyebrow b{ color:var(--gold-light); font-weight:600; }
+  h1.hero-title{ font-size:2.35rem; line-height:1.22; margin-bottom:20px; }
+  @media(min-width:640px){ h1.hero-title{ font-size:3.1rem; } }
+  h1.hero-title .accent{ color:var(--gold); }
+  .hero-sub{ color:var(--muted); font-size:1.08rem; max-width:560px; margin:0 auto 36px; }
+  .hero-sub .cream{ color:var(--cream); }
+
+  /* Hero signature visual: stylized route map, no borrowed assets */
+  .hero-visual{ position:relative; max-width:560px; margin:0 auto 34px; border-radius:22px; overflow:hidden; border:1px solid var(--border-gold-strong); box-shadow:var(--shadow-gold); background:
+      linear-gradient(160deg, var(--surface-2) 0%, var(--surface) 55%, #0d1424 100%);
+  }
+  .hero-visual svg{ width:100%; height:auto; display:block; }
+  .hero-visual .tag{ position:absolute; top:14px; right:14px; background:var(--gold); color:#191204; font-family:'Inter',sans-serif; font-size:.68rem; font-weight:700; letter-spacing:.06em; padding:6px 12px; border-radius:999px; }
+
+  .stat-row{ display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-bottom:30px; }
+  .stat{ border:1px solid var(--border-gold); background:var(--surface); border-radius:12px; padding:16px 22px; min-width:130px; }
+  .stat .num{ font-family:'Cinzel',serif; font-weight:700; color:var(--gold-light); font-size:1.5rem; }
+  .stat .stat-label{ color:var(--muted); font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; margin-top:2px; }
+
+  .trust-line{ font-size:.92rem; color:var(--muted); margin-bottom:8px; }
+  .trust-line b{ color:var(--gold-light); font-family:'Cinzel',serif; letter-spacing:.03em; }
+  .micro-badges{ display:flex; gap:22px; justify-content:center; flex-wrap:wrap; margin: 20px 0 26px; font-size:.85rem; color:var(--muted); font-family:'Inter',sans-serif; }
+
+  .live-counter{ display:inline-flex; align-items:center; gap:9px; background:var(--surface); border:1px solid var(--border-gold); padding:10px 20px; border-radius:999px; font-family:'Inter',sans-serif; font-size:.85rem; color:var(--muted); margin-bottom:26px; }
+  .dot{ width:9px; height:9px; border-radius:50%; background:var(--green); position:relative; }
+  .dot::after{ content:''; position:absolute; inset:-4px; border-radius:50%; background:var(--green); opacity:.4; animation:pulse 1.8s infinite; }
+  @keyframes pulse{ 0%{transform:scale(.6);opacity:.5;} 70%{transform:scale(1.8);opacity:0;} 100%{opacity:0;} }
+  .live-counter b{ color:var(--cream); font-weight:700; }
+
+  .bottom-trust{ display:flex; gap:10px; justify-content:center; flex-wrap:wrap; font-family:'Inter',sans-serif; font-size:.78rem; }
+  .bottom-trust span{ background:var(--surface-2); border-radius:999px; padding:7px 14px; color:var(--muted); }
+
+  /* Section headers */
+  .sec-title{ font-size:1.7rem; line-height:1.3; margin-bottom:16px; }
+  @media(min-width:640px){ .sec-title{ font-size:2.1rem; } }
+  .sec-sub{ color:var(--muted); font-size:1.02rem; max-width:560px; margin:0 auto; }
+
+  /* Dor comparison */
+  .compare{ display:flex; flex-wrap:wrap; gap:18px; margin-top:38px; }
+  .compare .comp-card{ flex:1 1 100%; min-width:0; }
+  @media(min-width:760px){ .compare .comp-card{ flex:1 1 0; } }
+  .comp-card{ border-radius:var(--radius); padding:26px; background:var(--surface); border:1px solid var(--border-gold); }
+  .comp-card.win{ border-color:var(--border-gold-strong); box-shadow:var(--shadow-gold); background:linear-gradient(160deg, var(--surface-2), var(--surface)); }
+  .tag-sm{ display:inline-block; font-family:'Inter',sans-serif; font-size:.68rem; letter-spacing:.12em; text-transform:uppercase; font-weight:700; padding:5px 12px; border-radius:999px; margin-bottom:16px; }
+  .tag-sm.off{ background:var(--surface-2); color:var(--muted); }
+  .tag-sm.on{ background:var(--gold); color:#191204; }
+  .verse{ font-style:italic; color:var(--cream); font-size:1.05rem; margin-bottom:10px; }
+  .verse-ref{ color:var(--muted-2); font-size:.85rem; margin-bottom:18px; }
+  .comp-note{ color:var(--muted); font-size:.92rem; }
+
+  .map-placeholder{
+    border-radius:12px; border:1.5px dashed var(--border-gold-strong);
+    background:
+      repeating-linear-gradient(135deg, rgba(199,162,72,.05) 0 2px, transparent 2px 14px),
+      var(--surface-2);
+    min-height:180px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px;
+    text-align:center; padding:18px; color:var(--gold-light);
+  }
+  .map-placeholder .pin{ font-size:1.6rem; }
+  .map-placeholder .cap{ font-family:'Inter',sans-serif; font-size:.76rem; color:var(--muted); text-transform:uppercase; letter-spacing:.06em; }
+  .map-placeholder .cap b{ color:var(--gold-light); display:block; font-size:.95rem; text-transform:none; letter-spacing:0; font-family:'Crimson Pro',serif; margin-top:4px; }
+
+  /* Aspect-ratio box compatível com navegadores antigos (padding-bottom trick, sem depender de aspect-ratio CSS) */
+  .ar-wrap{ position:relative; width:100%; height:0; overflow:hidden; border-radius:12px; }
+  .ar-wrap .img-card{ position:absolute; inset:0; }
+  .ar-43{ padding-bottom:133.333%; }
+  .ar-11{ padding-bottom:100%; }
+
+  /* Real image cards (assets fornecidos) */
+  .img-card{ position:relative; border-radius:12px; overflow:hidden; border:1.5px solid var(--border-gold-strong); min-height:180px; background:var(--surface-2); }
+  .img-card img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .img-card .img-scrim{ position:absolute; left:0; right:0; bottom:0; padding:14px 14px 12px; background:linear-gradient(180deg, transparent, rgba(6,9,17,.92) 78%); }
+  .img-card .img-scrim .cap-pt{ font-family:'Cinzel',serif; color:var(--cream); font-size:.92rem; line-height:1.25; }
+  .img-card .img-badge{ position:absolute; top:10px; left:10px; background:var(--gold); color:#191204; font-family:'Inter',sans-serif; font-size:.62rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; padding:5px 10px; border-radius:6px; z-index:2; }
+  .img-card .pin-badge{ position:absolute; top:12px; right:12px; background:rgba(6,9,17,.7); border:1px solid var(--border-gold-strong); color:var(--gold-light); font-size:.8rem; padding:6px 8px; border-radius:8px; }
+
+  /* Timeline horizontal (cobertura Gênesis -> Apocalipse) */
+  .timeline-strip{ display:flex; gap:14px; width:100%; max-width:100%; overflow-x:auto; padding:8px 4px 18px; scroll-snap-type:x proximity; -webkit-overflow-scrolling:touch; }
+  .timeline-strip::-webkit-scrollbar{ height:6px; }
+  .timeline-strip::-webkit-scrollbar-thumb{ background:var(--border-gold-strong); border-radius:4px; }
+  .timeline-card{ flex:0 0 auto; width:150px; scroll-snap-align:start; }
+  @media(min-width:640px){ .timeline-card{ width:180px; } }
+  .timeline-card .img-scrim .cap-pt{ font-size:.82rem; }
+  .timeline-order{ font-family:'Inter',sans-serif; font-size:.62rem; color:var(--muted-2); letter-spacing:.1em; }
+
+  .diff-line{ text-align:center; color:var(--muted); margin-top:30px; font-size:1.02rem; }
+  .diff-line b{ color:var(--cream); }
+  .diff-line .gold{ font-weight:600; }
+
+  /* Demo grid */
+  .demo-grid{ display:flex; flex-wrap:wrap; gap:14px; margin-top:36px; }
+  .demo-card{ flex:1 1 calc(50% - 7px); min-width:0; }
+  @media(min-width:760px){ .demo-card{ flex:1 1 calc(25% - 11px); } }
+  .demo-card .map-placeholder{ aspect-ratio:3/4; min-height:0; }
+  .demo-card .cap{ margin-top:10px; }
+
+  .btn{ display:inline-block; background:linear-gradient(180deg, var(--gold-light), var(--gold)); color:#191204; font-weight:700; padding:16px 30px; border-radius:12px; text-align:center; font-size:.95rem; letter-spacing:.03em; text-transform:uppercase; border:none; cursor:pointer; transition:transform .2s ease, box-shadow .2s ease; box-shadow:0 8px 30px -10px rgba(199,162,72,.55);}
+  .btn:hover{ transform:translateY(-2px); }
+  .btn.full{ width:100%; max-width:420px; }
+  .btn.ghost{ background:transparent; color:var(--muted); box-shadow:none; text-decoration:underline; text-transform:none; font-weight:500; padding:10px; }
+  .center-btn{ text-align:center; margin-top:34px; }
+  .demo-note{ text-align:center; color:var(--muted); font-size:.92rem; max-width:520px; margin:26px auto 0; }
+
+  /* Feature grid */
+  .feat-grid{ display:flex; flex-wrap:wrap; gap:16px; margin-top:36px; border:1px solid var(--border-gold); border-radius:var(--radius); padding:10px; background:var(--surface); }
+  .feat{ flex:1 1 100%; }
+  @media(min-width:640px){ .feat{ flex:1 1 calc(50% - 8px); } }
+  .feat{ display:flex; gap:14px; align-items:flex-start; padding:20px; }
+  .feat .ic{ width:44px; height:44px; border-radius:10px; background:var(--green-bg); color:var(--gold-light); display:flex; align-items:center; justify-content:center; font-size:1.3rem; flex-shrink:0; border:1px solid var(--border-gold); }
+  .feat .ft{ font-weight:600; color:var(--cream); margin-bottom:4px; }
+  .feat .fd{ color:var(--muted); font-size:.9rem; }
+
+  /* Big scenario blocks */
+  .scenario-block{ margin-top:20px; }
+  .scenario-block .map-placeholder{ min-height:230px; }
+
+  /* Social proof */
+  .pill-row{ display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-top:22px; }
+  .pill{ background:var(--surface); border:1px solid var(--border-gold); color:var(--muted); font-size:.82rem; padding:9px 16px; border-radius:999px; }
+
+  .testi-grid{ display:flex; flex-wrap:wrap; gap:16px; margin-top:40px; }
+  .testi{ flex:1 1 100%; min-width:0; }
+  @media(min-width:700px){ .testi{ flex:1 1 calc(50% - 8px); } }
+  .testi{ border:1px solid var(--border-gold); background:var(--surface); border-radius:14px; padding:22px; }
+  .testi .who{ display:flex; align-items:center; gap:12px; margin-bottom:12px; }
+  .avatar{ width:38px; height:38px; border-radius:50%; background:var(--surface-2); border:1px solid var(--border-gold); display:flex; align-items:center; justify-content:center; font-family:'Cinzel',serif; color:var(--gold-light); font-weight:700; font-size:.9rem; }
+  .who-name{ font-weight:600; color:var(--cream); font-size:.92rem; }
+  .who-stars{ color:var(--gold); font-size:.78rem; }
+  .testi p{ color:var(--muted); font-size:.94rem; margin-bottom:10px; }
+  .verified{ color:var(--green); font-size:.76rem; font-family:'Inter',sans-serif; font-weight:600; }
+
+  /* Bonuses */
+  .bonus-head{ display:flex; align-items:center; gap:16px; margin-bottom:8px; }
+  .bonus-num{ font-family:'Cinzel',serif; font-weight:800; color:var(--gold); font-size:3rem; line-height:1; }
+  .bonus-list{ display:flex; flex-direction:column; gap:16px; margin-top:32px; }
+  .bonus-card{ display:flex; flex-wrap:wrap; gap:14px 18px; align-items:center; border:2px solid var(--border-gold); border-radius:16px; padding:16px; background:var(--surface); }
+  .bonus-thumb{ width:74px; height:74px; border-radius:10px; flex-shrink:0; background:var(--surface-2); border:1.5px solid var(--border-gold-strong); overflow:hidden; }
+  .bonus-thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .bonus-info{ flex:1 1 150px; min-width:0; }
+  .bonus-title{ color:var(--gold-light); font-weight:600; margin-bottom:3px; }
+  .bonus-desc{ color:var(--muted); font-size:.87rem; }
+  .bonus-price{ display:flex; align-items:center; gap:10px; flex-shrink:0; margin-left:auto; padding-left:92px; }
+  @media(min-width:400px){ .bonus-price{ padding-left:0; } }
+  .strike{ color:var(--muted-2); text-decoration:line-through; font-size:.92rem; }
+  .free-badge{ background:var(--green); color:#0d2015; font-weight:800; font-size:.78rem; padding:7px 14px; border-radius:8px; letter-spacing:.03em; }
+
+  /* Offer / pricing */
+  .offer-box{ border:1px solid var(--border-gold-strong); border-radius:28px; overflow:hidden; box-shadow:var(--shadow-gold); background:linear-gradient(180deg, var(--surface-2), var(--bg-alt)); margin-top:10px; }
+  .offer-banner{ background:linear-gradient(90deg, #8a6c1f, var(--gold), #8a6c1f); text-align:center; padding:12px; color:#191204; font-family:'Inter',sans-serif; font-weight:800; font-size:.82rem; letter-spacing:.14em; text-transform:uppercase; }
+  .offer-inner{ padding:36px 24px; }
+  .value-list{ display:flex; flex-direction:column; gap:10px; margin:22px 0 30px; }
+  .value-row{ display:flex; align-items:center; gap:12px; background:var(--surface); border:1px solid rgba(199,162,72,.15); border-radius:10px; padding:12px 16px; }
+  .value-row .vi{ font-size:1.1rem; }
+  .value-row .vt{ flex:1; font-size:.92rem; color:var(--cream); }
+  .value-row .vv{ color:var(--muted); font-size:.88rem; }
+  .value-total{ text-align:center; font-size:.85rem; color:var(--muted); margin-bottom:6px; }
+  .value-total b{ color:var(--gold-light); }
+
+  .countdown-wrap{ text-align:center; margin:22px 0 30px; }
+  .countdown-label{ font-family:'Inter',sans-serif; font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin-bottom:10px; }
+  .countdown{ display:flex; gap:8px; justify-content:center; }
+  .cbox{ background:var(--bg); border:1px solid var(--border-gold-strong); border-radius:10px; padding:10px 14px; min-width:56px; text-align:center; }
+  .cbox .cv{ font-family:'Cinzel',serif; font-weight:700; color:var(--gold-light); font-size:1.4rem; }
+  .cbox .cl{ font-family:'Inter',sans-serif; font-size:.6rem; color:var(--muted-2); text-transform:uppercase; letter-spacing:.08em; }
+
+  .plans{ display:flex; flex-wrap:wrap; gap:18px; }
+  .plan-card{ flex:1 1 100%; min-width:0; }
+  @media(min-width:640px){ .plan-card{ flex:1 1 calc(50% - 9px); } }
+  .plan-card{ background:var(--surface); border:1px solid var(--border-gold); border-radius:16px; padding:26px 22px; display:flex; flex-direction:column; gap:14px; position:relative; }
+  .plan-card.popular{ border:2px solid var(--gold); box-shadow:0 0 40px -10px rgba(199,162,72,.4); }
+  .plan-badge{ position:absolute; top:-13px; left:50%; transform:translateX(-50%); background:var(--gold); color:#191204; font-family:'Inter',sans-serif; font-size:.66rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; padding:5px 14px; border-radius:999px; white-space:nowrap; }
+  .plan-name{ font-family:'Cinzel',serif; color:var(--gold-light); font-size:1.05rem; }
+  .plan-desc{ color:var(--muted); font-size:.86rem; }
+  .plan-price-row{ display:flex; align-items:baseline; gap:8px; margin:6px 0; }
+  .plan-from{ color:var(--muted-2); text-decoration:line-through; font-size:1rem; }
+  .plan-price{ font-family:'Cinzel',serif; font-weight:800; font-size:2.3rem; color:var(--cream); }
+  .plan-price small{ font-size:1rem; font-weight:600; }
+  .plan-save{ color:var(--green); font-size:.8rem; font-weight:600; font-family:'Inter',sans-serif; }
+  .plan-feats{ list-style:none; display:flex; flex-direction:column; gap:8px; font-size:.87rem; color:var(--muted); margin:4px 0; }
+  .plan-feats li::before{ content:'✓ '; color:var(--green); font-weight:700; }
+  .plan-cta{ margin-top:auto; text-align:center; padding:14px; border-radius:10px; font-weight:700; font-size:.85rem; letter-spacing:.03em; text-transform:uppercase; cursor:pointer; border:none; }
+  .plan-cta.primary{ background:linear-gradient(180deg, var(--gold-light), var(--gold)); color:#191204; }
+  .plan-cta.secondary{ background:var(--surface-2); color:var(--cream); border:1px solid var(--border-gold); }
+
+  .trust-icons{ display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-top:28px; font-family:'Inter',sans-serif; font-size:.78rem; color:var(--muted); }
+
+  /* Upsell modal — overlay rola a página inteira (evita clipping de centralização flex em telas baixas) */
+  .modal-overlay{ position:fixed; inset:0; background:rgba(5,8,16,.82); backdrop-filter:blur(4px); z-index:100; display:none; overflow-y:auto; padding:28px 16px; -webkit-overflow-scrolling:touch; }
+  .modal-overlay.show{ display:block; }
+  .modal{ background:linear-gradient(180deg, var(--surface-2), var(--bg-alt)); border:2px solid var(--gold); border-radius:22px; max-width:460px; width:100%; margin:0 auto; padding:28px 24px; text-align:center; box-shadow:0 0 80px -10px rgba(199,162,72,.5); position:relative; }
+  .modal-close{ position:absolute; top:12px; right:14px; color:var(--muted); background:rgba(255,255,255,.06); border:none; font-size:1.1rem; line-height:1; cursor:pointer; width:32px; height:32px; border-radius:50%; }
+  .modal-badge{ display:inline-block; background:var(--gold); color:#191204; font-family:'Inter',sans-serif; font-weight:800; font-size:.68rem; letter-spacing:.1em; text-transform:uppercase; padding:6px 14px; border-radius:999px; margin-bottom:14px; }
+  .modal h3{ font-size:1.25rem; margin-bottom:8px; line-height:1.3; }
+  .modal p.desc{ color:var(--muted); font-size:.88rem; margin-bottom:16px; }
+  .modal .price-compare{ display:flex; align-items:baseline; justify-content:center; gap:10px; margin-bottom:6px; }
+  .modal .from{ color:var(--muted-2); text-decoration:line-through; font-size:1.05rem; }
+  .modal .to{ font-family:'Cinzel',serif; font-weight:800; font-size:2.2rem; color:var(--gold-light); }
+  .modal .save-line{ color:var(--green); font-size:.8rem; font-weight:600; margin-bottom:16px; font-family:'Inter',sans-serif; }
+  .modal .countdown-label{ margin-bottom:8px; }
+  .modal .countdown{ margin-bottom:18px; }
+  .modal .btn.full{ margin:0 auto; }
+  .modal-expired{ display:none; color:var(--red); font-size:.85rem; margin-top:10px; font-family:'Inter',sans-serif; }
+  @media(max-height:700px){
+    .modal-overlay{ padding:16px; }
+    .modal{ padding:20px 18px; }
+    .modal-badge{ margin-bottom:10px; }
+    .modal h3{ font-size:1.08rem; margin-bottom:6px; }
+    .modal p.desc{ font-size:.82rem; margin-bottom:12px; }
+    .modal .to{ font-size:1.9rem; }
+    .modal .save-line{ margin-bottom:12px; }
+    .modal .countdown{ margin-bottom:14px; }
+    .cbox{ padding:7px 11px; min-width:46px; }
+    .cbox .cv{ font-size:1.15rem; }
+  }
+
+  /* Guarantee */
+  .guarantee-box{ border:1px solid var(--border-gold); border-radius:20px; background:var(--surface); padding:28px 26px; display:flex; align-items:center; gap:24px; flex-wrap:wrap; justify-content:center; text-align:center; }
+  @media(min-width:600px){ .guarantee-box{ text-align:left; justify-content:flex-start; } }
+  .guarantee-num{ font-family:'Cinzel',serif; font-weight:800; font-size:4.2rem; color:var(--gold); line-height:1; }
+  .guarantee-label{ font-family:'Inter',sans-serif; font-size:.85rem; font-weight:700; letter-spacing:.06em; color:var(--cream); }
+  .guarantee-text{ color:var(--muted); font-size:.92rem; max-width:400px; }
+
+  /* FAQ */
+  .faq-item{ border:1px solid var(--border-gold); border-radius:12px; margin-bottom:12px; overflow:hidden; background:var(--surface); }
+  .faq-q{ width:100%; text-align:left; background:none; border:none; color:var(--cream); padding:18px 20px; font-size:.95rem; font-weight:600; display:flex; justify-content:space-between; align-items:center; cursor:pointer; gap:12px; }
+  .faq-q .plus{ color:var(--gold); font-size:1.2rem; flex-shrink:0; transition:transform .2s; }
+  .faq-item.open .plus{ transform:rotate(45deg); }
+  .faq-a{ max-height:0; overflow:hidden; transition:max-height .25s ease; }
+  .faq-item.open .faq-a{ max-height:220px; }
+  .faq-a p{ padding:0 20px 18px; color:var(--muted); font-size:.9rem; }
+
+  /* Final CTA + footer */
+  .final-cta{ text-align:center; }
+  footer{ border-top:1px solid var(--border-gold); padding:44px 0 30px; text-align:center; }
+  .footer-fine{ color:var(--muted-2); font-size:.78rem; margin-top:14px; line-height:1.7; }
+  .contact-link{ display:inline-flex; align-items:center; gap:8px; background:var(--surface); border:1px solid var(--border-gold); padding:12px 22px; border-radius:10px; color:var(--cream); font-size:.9rem; margin-top:6px; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="inner">
+    <div class="brand">Geografia Bíblica <span>EBD</span></div>
+    <a href="#oferta" class="nav-cta">Quero acessar</a>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="wrap">
+    <div class="stars">★★★★★</div>
+    <p class="hero-eyebrow">Feito especialmente para <b>professores e líderes de EBD</b>, ministério infantil e voluntários da igreja.</p>
+    <h1 class="hero-title">Os cenários bíblicos que suas crianças vão finalmente <span class="accent">enxergar, entender e lembrar.</span></h1>
+    <p class="hero-sub"><span class="cream">Não conte apenas a história. Mostre onde ela aconteceu.</span> Um guia visual com mapas, reconstruções 3D e cenários bíblicos reais, prontos para usar na sua próxima aula de EBD.</p>
+
+    <div class="hero-visual">
+      <img src="images/hero-veja-a-historia.png" alt="Professor mostrando mapa bíblico em 3D para crianças de EBD">
+    </div>
+
+    <div class="stat-row">
+      <div class="stat"><div class="num">280+</div><div class="stat-label">Imagens em alta resolução</div></div>
+      <div class="stat"><div class="num">100+</div><div class="stat-label">Mapas e rotas bíblicas</div></div>
+      <div class="stat"><div class="num">100%</div><div class="stat-label">Precisão histórica</div></div>
+    </div>
+
+    <p class="trust-line">100% baseado na <b>Bíblia Sagrada</b></p>
+    <p class="muted" style="font-size:.88rem; margin-bottom:6px;">Compatível com ACF, NVI, NTLH e as principais traduções em português.</p>
+
+    <div class="micro-badges">
+      <span>🔒 Finalização de compra segura</span>
+      <span>🏆 Satisfação garantida</span>
+      <span>🛡️ Privacidade protegida</span>
+    </div>
+
+    <div class="live-counter"><span class="dot"></span> <span id="viewerCount">14</span> professores estão vendo esta oferta agora</div>
+
+    <div class="bottom-trust">
+      <span>🔒 Pagamento seguro</span>
+      <span>⚡ Acesso instantâneo</span>
+      <span>✅ Feito para EBD</span>
+    </div>
+  </div>
+</section>
+
+<div class="waypoint"><div class="line"></div><div class="chip"><span class="n">01</span> História</div><div class="line"></div></div>
+
+<!-- ================= DOR ================= -->
+<section>
+  <div class="wrap center">
+    <h2 class="sec-title">Quantas vezes sua turma ouviu a história <span class="gold">sem enxergar onde ela aconteceu?</span></h2>
+    <p class="sec-sub">A Bíblia menciona centenas de lugares reais — Betel, Cafarnaum, Jope — mas sem vê-los, a criança perde o contexto. Contar sem mostrar é ensinar só metade da história.</p>
+  </div>
+  <div class="wrap-wide">
+    <div class="compare">
+      <div class="comp-card">
+        <span class="tag-sm off">Somente narrativa</span>
+        <p class="verse">"Jesus foi com os discípulos para as aldeias de Cesareia de Filipe. Pelo caminho, perguntou-lhes: Quem dizem os homens que eu sou?"</p>
+        <p class="verse-ref">— Marcos 8:27</p>
+        <p class="comp-note">Onde fica Cesareia de Filipe? Que caminho eles seguiram? Para a criança, a passagem fica só... no ar.</p>
+      </div>
+      <div class="comp-card win">
+        <span class="tag-sm on">Com mapa 3D em sala</span>
+        <p class="verse">"Jesus foi com os discípulos para as aldeias de Cesareia de Filipe..."</p>
+        <div class="img-card" style="min-height:220px;">
+          <img src="images/cesareia-de-filipe.webp" alt="Mapa 3D de Cesareia de Filipe">
+          <span class="pin-badge">📍</span>
+          <div class="img-scrim"><div class="cap-pt">Cesareia de Filipe · c. 10 a.C.–10 d.C.</div></div>
+        </div>
+      </div>
+    </div>
+    <p class="diff-line">A diferença entre <b>contar</b> e <b class="gold">ensinar</b> está em mostrar o cenário onde tudo aconteceu.</p>
+  </div>
+</section>
+
+<div class="waypoint"><div class="line"></div><div class="chip"><span class="n">02</span> Lugar</div><div class="line"></div></div>
+
+<!-- ================= DEMONSTRAÇÃO ================= -->
+<section>
+  <div class="wrap center">
+    <h2 class="sec-title">Dê uma olhada <span class="gold">no material que vai transformar sua aula</span></h2>
+    <p class="sec-sub">Veja o formato de páginas reais do conteúdo — mapas, reconstruções 3D e explicações bíblicas — antes de desbloquear o acesso completo.</p>
+  </div>
+  <div class="wrap-wide">
+    <div class="demo-grid">
+      <div class="demo-card">
+        <div class="ar-wrap ar-43"><div class="img-card">
+          <span class="img-badge">Pré-visualização 1</span>
+          <img src="images/preview-sete-igrejas.webp" alt="Rota das Sete Igrejas do Apocalipse">
+          <div class="img-scrim"><div class="cap-pt">A Rota das Sete Igrejas do Apocalipse</div></div>
+      </div>
+        </div>
+      </div>
+      <div class="demo-card">
+        <div class="ar-wrap ar-43"><div class="img-card">
+          <span class="img-badge">Pré-visualização 2</span>
+          <img src="images/preview-templo-herodes.webp" alt="O Templo de Herodes em detalhes">
+          <div class="img-scrim"><div class="cap-pt">O Templo de Herodes em Detalhes</div></div>
+      </div>
+        </div>
+      </div>
+      <div class="demo-card">
+        <div class="ar-wrap ar-43"><div class="img-card">
+          <span class="img-badge">Pré-visualização 3</span>
+          <img src="images/preview-betania-lazaro.webp" alt="Betânia e o Túmulo de Lázaro">
+          <div class="img-scrim"><div class="cap-pt">Betânia e o Túmulo de Lázaro</div></div>
+      </div>
+        </div>
+      </div>
+      <div class="demo-card">
+        <div class="ar-wrap ar-43"><div class="img-card">
+          <span class="img-badge">Pré-visualização 4</span>
+          <img src="images/preview-paulo-viagens.webp" alt="As Viagens de Paulo">
+          <div class="img-scrim"><div class="cap-pt">As Viagens de Paulo</div></div>
+      </div>
+        </div>
+      </div>
+    </div>
+    <p class="demo-note">Estas são apenas algumas páginas de exemplo. O guia completo reúne mais de 50 estudos visuais com mapas, imagens e explicações organizadas para facilitar sua preparação de aula.</p>
+    <div class="center-btn"><a href="#oferta" class="btn">Quero acessar os mapas 3D</a></div>
+  </div>
+</section>
+
+<!-- ================= O QUE VOCÊ RECEBE ================= -->
+<section style="padding-top:20px;">
+  <div class="wrap center">
+    <h2 class="sec-title">Tudo o que você precisa para <span class="gold">finalmente</span> ensinar mostrando</h2>
+  </div>
+  <div class="wrap-wide">
+    <div class="feat-grid">
+      <div class="feat"><div class="ic">📖</div><div><div class="ft">Cobertura completa da Bíblia</div><div class="fd">Do Gênesis ao Apocalipse, organizado para a EBD</div></div></div>
+      <div class="feat"><div class="ic">📍</div><div><div class="ft">Mapas e rotas detalhadas</div><div class="fd">Prontos para mostrar na sua próxima aula</div></div></div>
+      <div class="feat"><div class="ic">🏛️</div><div><div class="ft">Reconstruções 3D</div><div class="fd">De templos, cidades e cenários bíblicos</div></div></div>
+      <div class="feat"><div class="ic">🖼️</div><div><div class="ft">+280 imagens em alta resolução</div><div class="fd">Para imprimir ou projetar em sala</div></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="waypoint"><div class="line"></div><div class="chip"><span class="n">03</span> Visualização</div><div class="line"></div></div>
+
+<!-- ================= O QUE OFERECE ================= -->
+<section>
+  <div class="wrap center">
+    <h2 class="sec-title">Cobertura completa: <span class="gold">do Gênesis ao Apocalipse</span></h2>
+    <p class="sec-sub">Cada lição vem conectada ao seu cenário, local e contexto real — organizado do jeito que você precisa para preparar aula rápido e ensinar mostrando, não só contando.</p>
+  </div>
+  <div class="wrap-wide">
+    <div class="timeline-strip">
+      <div class="timeline-card"><div class="ar-wrap ar-11"><div class="img-card"><img src="images/cap-1-genesis.webp" alt="O Mundo de Gênesis"><div class="img-scrim"><div class="timeline-order">01</div><div class="cap-pt">O Mundo de Gênesis</div></div></div></div></div>
+      <div class="timeline-card"><div class="ar-wrap ar-11"><div class="img-card"><img src="images/cap-2-exodo.webp" alt="Do Êxodo à Peregrinação no Deserto"><div class="img-scrim"><div class="timeline-order">02</div><div class="cap-pt">Do Êxodo à Peregrinação no Deserto</div></div></div></div></div>
+      <div class="timeline-card"><div class="ar-wrap ar-11"><div class="img-card"><img src="images/cap-3-conquista.webp" alt="A Conquista da Terra Prometida"><div class="img-scrim"><div class="timeline-order">03</div><div class="cap-pt">A Conquista da Terra Prometida</div></div></div></div></div>
+      <div class="timeline-card"><div class="ar-wrap ar-11"><div class="img-card"><img src="images/cap-4-juizes.webp" alt="Juízes e a Formação do Reino"><div class="img-scrim"><div class="timeline-order">04</div><div class="cap-pt">Juízes e a Formação do Reino</div></div></div></div></div>
+      <div class="timeline-card"><div class="ar-wrap ar-11"><div class="img-card"><img src="images/cap-5-reino-unido.webp" alt="O Reino Unido: Saul, Davi e Salomão"><div class="img-scrim"><div class="timeline-order">05</div><div class="cap-pt">O Reino Unido: Saul, Davi e Salomão</div></div></div></div></div>
+      <div class="timeline-card"><div class="ar-wrap ar-11"><div class="img-card"><img src="images/cap-6-exilio-retorno.webp" alt="Exílio e Retorno"><div class="img-scrim"><div class="timeline-order">06</div><div class="cap-pt">Exílio e Retorno</div></div></div></div></div>
+      <div class="timeline-card"><div class="ar-wrap ar-11"><div class="img-card"><img src="images/cap-7-tempo-jesus.webp" alt="O Mundo no Tempo de Jesus"><div class="img-scrim"><div class="timeline-order">07</div><div class="cap-pt">O Mundo no Tempo de Jesus</div></div></div></div></div>
+      <div class="timeline-card"><div class="ar-wrap ar-11"><div class="img-card"><img src="images/cap-8-expansao-igreja.webp" alt="A Expansão da Igreja Primitiva"><div class="img-scrim"><div class="timeline-order">08</div><div class="cap-pt">A Expansão da Igreja Primitiva</div></div></div></div></div>
+      <div class="timeline-card"><div class="ar-wrap ar-11"><div class="img-card"><img src="images/cap-9-cartas-apocalipse.webp" alt="As Cartas e o Apocalipse"><div class="img-scrim"><div class="timeline-order">09</div><div class="cap-pt">As Cartas e o Apocalipse</div></div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROVA SOCIAL ================= -->
+<section>
+  <div class="wrap center">
+    <h3 style="font-size:1.2rem;">Aprovado por professores de <span class="gold">todas as denominações</span></h3>
+    <div class="pill-row">
+      <span class="pill">📖 Professores de EBD</span>
+      <span class="pill">🧒 Líderes de Ministério Infantil</span>
+      <span class="pill">🙌 Voluntários da Igreja</span>
+      <span class="pill">⛪ Pastores</span>
+    </div>
+  </div>
+  <div class="wrap-wide">
+    <div class="testi-grid">
+      <div class="testi">
+        <div class="who"><div class="avatar">A</div><div><div class="who-name">Ana P. · Professora de EBD, SP</div><div class="who-stars">★★★★★</div></div></div>
+        <p>"Nunca imaginei que minhas aulas pudessem ficar tão visuais. As crianças ficaram encantadas com os mapas."</p>
+        <span class="verified">✓ Leitora verificada</span>
+      </div>
+      <div class="testi">
+        <div class="who"><div class="avatar">M</div><div><div class="who-name">Marcos T. · Líder de Ministério Infantil, MG</div><div class="who-stars">★★★★★</div></div></div>
+        <p>"Os mapas 3D prendem a atenção da turma inteira. Uso em quase toda aula agora."</p>
+        <span class="verified">✓ Leitor verificado</span>
+      </div>
+      <div class="testi">
+        <div class="who"><div class="avatar">C</div><div><div class="who-name">Camila R. · Voluntária de EBD, RJ</div><div class="who-stars">★★★★★</div></div></div>
+        <p>"Antes eu só contava a história. Agora eu mostro onde ela aconteceu — e as crianças lembram muito mais."</p>
+        <span class="verified">✓ Leitora verificada</span>
+      </div>
+      <div class="testi">
+        <div class="who"><div class="avatar">J</div><div><div class="who-name">Pastor João S. · BA</div><div class="who-stars">★★★★★</div></div></div>
+        <p>"Recomendo para toda equipe de ensino infantil da igreja. Vale muito mais do que o preço."</p>
+        <span class="verified">✓ Leitor verificado</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="waypoint"><div class="line"></div><div class="chip"><span class="n">04</span> Compreensão</div><div class="line"></div></div>
+
+<!-- ================= BÔNUS ================= -->
+<section>
+  <div class="wrap-wide">
+    <div class="bonus-head"><div class="bonus-num">+5</div><div><div class="eyebrow gold">Exclusivo</div><div class="eyebrow gold">Bônus para EBD</div></div></div>
+    <div class="bonus-list">
+      <div class="bonus-card">
+        <div class="bonus-thumb"><img src="images/bonus-roteiros-aula.png" alt="Roteiros de Aula Visual" loading="lazy"></div>
+        <div class="bonus-info"><div class="bonus-title">Roteiros de Aula Visual</div><div class="bonus-desc">Aulas prontas conectando cada mapa à lição da semana.</div></div>
+        <div class="bonus-price"><span class="strike">R$19,90</span><span class="free-badge">GRÁTIS</span></div>
+      </div>
+      <div class="bonus-card">
+        <div class="bonus-thumb"><img src="images/bonus-dinamicas.png" alt="Dinâmicas Bíblicas para EBD" loading="lazy"></div>
+        <div class="bonus-info"><div class="bonus-title">Dinâmicas Bíblicas para EBD</div><div class="bonus-desc">Atividades em grupo para fixar cada história.</div></div>
+        <div class="bonus-price"><span class="strike">R$14,90</span><span class="free-badge">GRÁTIS</span></div>
+      </div>
+      <div class="bonus-card">
+        <div class="bonus-thumb"><img src="images/bonus-perguntas-fixacao.png" alt="Perguntas de Fixação" loading="lazy"></div>
+        <div class="bonus-info"><div class="bonus-title">Perguntas de Fixação</div><div class="bonus-desc">Uma pergunta por lição para checar o aprendizado.</div></div>
+        <div class="bonus-price"><span class="strike">R$9,90</span><span class="free-badge">GRÁTIS</span></div>
+      </div>
+      <div class="bonus-card">
+        <div class="bonus-thumb"><img src="images/bonus-atividades-colorir.png" alt="Atividades de Geografia Bíblica" loading="lazy"></div>
+        <div class="bonus-info"><div class="bonus-title">Atividades de Geografia Bíblica</div><div class="bonus-desc">Prontas para imprimir e colorir com a turma.</div></div>
+        <div class="bonus-price"><span class="strike">R$14,90</span><span class="free-badge">GRÁTIS</span></div>
+      </div>
+      <div class="bonus-card">
+        <div class="bonus-thumb"><img src="images/bonus-guia-professor.png" alt="Guia do Professor" loading="lazy"></div>
+        <div class="bonus-info"><div class="bonus-title">Guia do Professor</div><div class="bonus-desc">Como usar cada mapa em sala, passo a passo.</div></div>
+        <div class="bonus-price"><span class="strike">R$19,90</span><span class="free-badge">GRÁTIS</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= OFERTA ================= -->
+<section id="oferta">
+  <div class="wrap">
+    <div class="offer-box">
+      <div class="offer-banner">⚡ Oferta por tempo limitado ⚡</div>
+      <div class="offer-inner">
+        <h2 class="sec-title center" style="font-size:1.5rem;">Tudo o que você vai <span class="gold">receber hoje</span></h2>
+
+        <div class="countdown-wrap">
+          <div class="countdown-label">Esta oferta se renova em:</div>
+          <div class="countdown">
+            <div class="cbox"><div class="cv" id="hh">23</div><div class="cl">Horas</div></div>
+            <div class="cbox"><div class="cv" id="mm">59</div><div class="cl">Min</div></div>
+            <div class="cbox"><div class="cv" id="ss">59</div><div class="cl">Seg</div></div>
+          </div>
+        </div>
+
+        <div class="value-list">
+          <div class="value-row"><span class="vi">📖</span><span class="vt">Guia Geografia Bíblica EBD completo</span><span class="vv">R$47,90</span></div>
+          <div class="value-row"><span class="vi">🎁</span><span class="vt">+5 bônus exclusivos para EBD</span><span class="vv">R$79,50</span></div>
+          <div class="value-row"><span class="vi">🔄</span><span class="vt">Atualizações contínuas de conteúdo</span><span class="vv">R$29,00</span></div>
+          <div class="value-row"><span class="vi">♾️</span><span class="vt">Acesso vitalício</span><span class="vv">R$29,00</span></div>
+          <div class="value-row"><span class="vi">💬</span><span class="vt">Suporte dedicado</span><span class="vv">R$15,00</span></div>
+        </div>
+        <p class="value-total">Valor total de tudo incluso: <b>R$200,40</b></p>
+
+        <div class="plans">
+          <div class="plan-card">
+            <div class="plan-name">Plano Básico</div>
+            <div class="plan-desc">A porta de entrada, com o essencial para começar.</div>
+            <div class="plan-price-row"><span class="plan-from">R$47,90</span></div>
+            <div class="plan-price">R$10<small>,00</small></div>
+            <ul class="plan-feats">
+              <li>Guia Geografia Bíblica EBD (versão essencial)</li>
+              <li>Acesso vitalício</li>
+              <li>Suporte por e-mail</li>
+            </ul>
+            <button class="plan-cta secondary" onclick="chooseBasic()">Quero o Básico</button>
+          </div>
+          <div class="plan-card popular">
+            <div class="plan-badge">Mais escolhido</div>
+            <div class="plan-name">Plano Completo</div>
+            <div class="plan-desc">O guia inteiro + todos os bônus para EBD.</div>
+            <div class="plan-price-row"><span class="plan-from">R$200,40</span></div>
+            <div class="plan-price">R$27<small>,67</small></div>
+            <div class="plan-save">Você economiza R$172,73</div>
+            <ul class="plan-feats">
+              <li>Guia completo (Gênesis ao Apocalipse)</li>
+              <li>+5 bônus exclusivos para EBD</li>
+              <li>Atualizações contínuas</li>
+              <li>Acesso vitalício + suporte dedicado</li>
+            </ul>
+            <button class="plan-cta primary" onclick="goToCheckout('complete')">Quero o Completo</button>
+          </div>
+        </div>
+
+        <div class="trust-icons">
+          <span>🔒 Finalização de compra segura</span>
+          <span>🏆 Satisfação garantida</span>
+          <span>🛡️ Privacidade protegida</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= UPSELL MODAL ================= -->
+<div class="modal-overlay" id="upsellModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeUpsell()">✕</button>
+    <span class="modal-badge">Oferta única · só agora</span>
+    <h3>Espera! Antes de continuar, que tal levar <span class="gold">tudo</span>?</h3>
+    <p class="desc">Você escolheu o Plano Básico. Adicione os 5 bônus exclusivos, atualizações e suporte dedicado — só nesta tela, por um preço especial.</p>
+    <div class="price-compare"><span class="from">R$27,67</span><span class="to">R$17,89</span></div>
+    <p class="save-line">Você economiza mais R$9,78 upgradando agora</p>
+    <div class="countdown-label">Esta oferta expira em:</div>
+    <div class="countdown" style="margin-bottom:22px;">
+      <div class="cbox"><div class="cv" id="umm">05</div><div class="cl">Min</div></div>
+      <div class="cbox"><div class="cv" id="uss">00</div><div class="cl">Seg</div></div>
+    </div>
+    <button class="btn full" id="upsellAcceptBtn" onclick="goToCheckout('upgrade')">Sim, quero o Completo por R$17,89</button>
+    <div style="margin-top:12px;"><a href="#" class="btn ghost" onclick="declineUpsell(); return false;">Não, quero continuar só com o Básico</a></div>
+    <p class="modal-expired" id="modalExpired">Esta oferta expirou. Você pode continuar com o Plano Básico normalmente.</p>
+  </div>
+</div>
+
+<!-- ================= GARANTIA ================= -->
+<section>
+  <div class="wrap">
+    <div class="guarantee-box">
+      <div>
+        <div class="guarantee-num">30</div>
+        <div class="guarantee-label">DIAS DE<br>GARANTIA</div>
+      </div>
+      <p class="guarantee-text">Temos tanta confiança na qualidade do material que oferecemos uma <b class="gold">garantia incondicional de 30 dias</b>. Se por qualquer motivo você não gostar, devolvemos 100% do seu investimento — sem perguntas.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section>
+  <div class="wrap">
+    <h2 class="sec-title center" style="font-size:1.7rem;">Perguntas <span class="gold">frequentes</span></h2>
+    <div style="margin-top:32px;" id="faqList">
+      <div class="faq-item">
+        <button class="faq-q">Como vou receber o material?<span class="plus">+</span></button>
+        <div class="faq-a"><p>Após a confirmação do pagamento, você recebe um e-mail com acesso imediato à plataforma com todo o conteúdo.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">O acesso é vitalício?<span class="plus">+</span></button>
+        <div class="faq-a"><p>Sim! Após a compra, você tem acesso vitalício a todo o conteúdo, incluindo atualizações futuras.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Posso acessar pelo celular?<span class="plus">+</span></button>
+        <div class="faq-a"><p>Sim! O conteúdo é 100% compatível com celular, tablet e computador.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Posso imprimir ou projetar os mapas na minha aula?<span class="plus">+</span></button>
+        <div class="faq-a"><p>Sim! Você pode imprimir ou projetar os mapas e imagens direto na sua sala de EBD.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Serve para qual faixa etária?<span class="plus">+</span></button>
+        <div class="faq-a"><p>O material foi pensado para professores usarem com turmas de EBD infantil e pré-adolescentes, mas se adapta bem a outras faixas do ministério infantil.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Preciso ter conhecimento bíblico avançado?<span class="plus">+</span></button>
+        <div class="faq-a"><p>Não! O material foi feito tanto para quem está começando a lecionar quanto para quem já ensina há anos.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">E se eu não gostar?<span class="plus">+</span></button>
+        <div class="faq-a"><p>Você tem uma garantia incondicional de 30 dias. Se não gostar, devolvemos 100% do valor, sem perguntas.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Quais formas de pagamento são aceitas?<span class="plus">+</span></button>
+        <div class="faq-a"><p>Aceitamos os principais cartões de crédito, débito e Pix. Todas as transações são processadas com segurança.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA FINAL + CONTATO ================= -->
+<section class="final-cta">
+  <div class="wrap">
+    <h2 class="sec-title">Transforme suas aulas de EBD <span class="gold">hoje</span></h2>
+    <p class="sec-sub" style="margin-bottom:30px;">Não conte apenas a história. Mostre onde ela aconteceu.</p>
+    <a href="#oferta" class="btn full">Quero acessar os mapas 3D</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="muted" style="margin-bottom:6px;">Dúvidas? Fale com a gente.</p>
+    <a class="contact-link" href="mailto:historiasbiblicas3d2026@gmail.com">✉️ historiasbiblicas3d2026@gmail.com</a>
+    <p class="footer-fine">Geografia Bíblica EBD — Material de apoio para professores de Escola Bíblica Infantil.<br>Este produto não substitui o estudo direto das Escrituras. © 2026. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script>
+  // Live viewer counter — flutuação realista, por sessão (não é uma claim global)
+  (function(){
+    const el = document.getElementById('viewerCount');
+    let val = 14;
+    setInterval(()=>{
+      const delta = Math.random() > 0.5 ? 1 : -1;
+      val = Math.max(8, Math.min(27, val + delta));
+      el.textContent = val;
+    }, 3500);
+  })();
+
+  // Countdown geral da oferta — 24h por sessão (reinicia por sessão de visita, não é claim global falsa)
+  (function(){
+    const KEY = 'ebd-offer-end';
+    let end = sessionStorage.getItem(KEY);
+    if(!end){ end = Date.now() + 24*60*60*1000; sessionStorage.setItem(KEY, end); }
+    end = Number(end);
+    function tick(){
+      const diff = Math.max(0, Math.floor((end - Date.now())/1000));
+      const h = Math.floor(diff/3600), m = Math.floor((diff%3600)/60), s = diff%60;
+      document.getElementById('hh').textContent = String(h).padStart(2,'0');
+      document.getElementById('mm').textContent = String(m).padStart(2,'0');
+      document.getElementById('ss').textContent = String(s).padStart(2,'0');
+    }
+    tick(); setInterval(tick, 1000);
+  })();
+
+
+  /* =========================================================
+     TRACKING + CHECKOUT
+     - A landing captura UTMs / fbclid.
+     - Não dispara InitiateCheckout aqui.
+     - O InitiateCheckout deve ser disparado pela Wiapy quando
+       o checkout for realmente aberto.
+     ========================================================= */
+  (function(){
+    const KEYS = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid'];
+    const params = new URLSearchParams(window.location.search);
+    KEYS.forEach(key=>{
+      const value = params.get(key);
+      if(value) sessionStorage.setItem('ebd_'+key, value);
+    });
+  })();
+
+  function getStoredTrackingParams(){
+    const keys = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid'];
+    const data = {};
+    keys.forEach(k=>{
+      const v = sessionStorage.getItem('ebd_'+k);
+      if(v) data[k] = v;
+    });
+    return data;
+  }
+
+  function addTrackingParams(url){
+    if(!url || url.indexOf('COLOQUE_') === 0) return url;
+    try{
+      const u = new URL(url, window.location.href);
+      const tracking = getStoredTrackingParams();
+      Object.keys(tracking).forEach(key=>{
+        if(tracking[key] && !u.searchParams.has(key)){
+          u.searchParams.set(key, tracking[key]);
+        }
+      });
+      return u.toString();
+    }catch(e){
+      return url;
+    }
+  }
+
+  function goToCheckout(type){
+    const map = {
+      basic: window.EBD_CONFIG.checkoutBasic,
+      complete: window.EBD_CONFIG.checkoutComplete,
+      upgrade: window.EBD_CONFIG.checkoutUpgrade
+    };
+    const target = map[type];
+    if(!target || target.indexOf('COLOQUE_') === 0){
+      alert('Configure o link real do checkout da Wiapy no bloco EBD_CONFIG no início do index.html.');
+      return;
+    }
+    // PageView/ViewContent permanecem na landing.
+    // InitiateCheckout NÃO é disparado aqui: ele deve ser enviado pela Wiapy
+    // quando o checkout for efetivamente aberto.
+    window.location.href = addTrackingParams(target);
+  }
+
+  function trackViewContent(){
+    if(typeof fbq === 'function'){
+      fbq('track','ViewContent',{content_name:'EBD 3D — Histórias Bíblicas para Ver e Ensinar'});
+    }
+  }
+  window.addEventListener('load', trackViewContent);
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-item').forEach(item=>{
+    item.querySelector('.faq-q').addEventListener('click', ()=>{
+      item.classList.toggle('open');
+    });
+  });
+
+  // Upsell flow — cronômetro real de 5 minutos, inicia quando o modal abre
+  let upsellTimer = null;
+  function chooseBasic(){
+    document.getElementById('upsellModal').classList.add('show');
+    startUpsellCountdown(5*60);
+  }
+  function closeUpsell(){
+    document.getElementById('upsellModal').classList.remove('show');
+    if(upsellTimer) clearInterval(upsellTimer);
+  }
+  function declineUpsell(){
+    // segue para o checkout do Plano Básico
+    closeUpsell();
+    goToCheckout('basic');
+  }
+  function startUpsellCountdown(seconds){
+    let remaining = seconds;
+    const mmEl = document.getElementById('umm');
+    const ssEl = document.getElementById('uss');
+    const btn = document.getElementById('upsellAcceptBtn');
+    const expiredMsg = document.getElementById('modalExpired');
+    if(upsellTimer) clearInterval(upsellTimer);
+    function render(){
+      const m = Math.floor(remaining/60), s = remaining%60;
+      mmEl.textContent = String(m).padStart(2,'0');
+      ssEl.textContent = String(s).padStart(2,'0');
+    }
+    render();
+    upsellTimer = setInterval(()=>{
+      remaining--;
+      if(remaining <= 0){
+        clearInterval(upsellTimer);
+        remaining = 0;
+        render();
+        btn.disabled = true;
+        btn.style.opacity = '0.5';
+        btn.style.pointerEvents = 'none';
+        btn.textContent = 'Oferta expirada';
+        expiredMsg.style.display = 'block';
+        return;
+      }
+      render();
+    }, 1000);
+  }
+</script>
+
+</body>
+</html>
+
