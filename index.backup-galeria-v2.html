@@ -35,14 +35,14 @@
 (function() {
 
   const demoImages = [
-    "imagens2/betaniabetfege.webp",
-    "imagens2/comoeraarca.webp",
-    "imagens2/modulo7.webp",
-    "imagens2/montemoria.webp",
-    "imagens2/neemias.webp",
-    "imagens2/relevoclima.webp",
-    "imagens2/rotasantigas.webp",
-    "imagens2/viagrmpaulo.webp"
+    "images/demo-01.webp",
+    "images/demo-02.webp",
+    "images/demo-03.webp",
+    "images/demo-04.webp",
+    "images/demo-05.webp",
+    "images/demo-06.webp",
+    "images/demo-07.webp",
+    "images/demo-08.webp"
   ];
 
   const lightbox = document.getElementById("ebdDemoLightbox");
@@ -128,40 +128,6 @@
       else prevImage();
     }
   }, { passive: true });
-
-})();
-
-
-/* EBD3D_CAROUSEL_JS_V2 */
-
-(function() {
-
-  const gallery = document.querySelector(".ebd-demo-gallery");
-  const prev = document.querySelector(".ebd-gallery-prev");
-  const next = document.querySelector(".ebd-gallery-next");
-
-  if (!gallery || !prev || !next) return;
-
-  function scrollAmount() {
-    const card = gallery.querySelector(".demo-card");
-    if (!card) return 300;
-
-    return card.getBoundingClientRect().width + 14;
-  }
-
-  prev.addEventListener("click", function() {
-    gallery.scrollBy({
-      left: -scrollAmount(),
-      behavior: "smooth"
-    });
-  });
-
-  next.addEventListener("click", function() {
-    gallery.scrollBy({
-      left: scrollAmount(),
-      behavior: "smooth"
-    });
-  });
 
 })();
 
@@ -649,134 +615,6 @@
   }
 }
 
-
-/* EBD3D_CAROUSEL_V2 */
-
-.ebd-gallery-shell {
-  position: relative;
-  margin-top: 36px;
-  padding: 0 52px;
-}
-
-.ebd-demo-gallery {
-  display: flex !important;
-  flex-wrap: nowrap !important;
-  grid-template-columns: none !important;
-  gap: 14px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  padding: 4px 2px 12px;
-}
-
-.ebd-demo-gallery::-webkit-scrollbar {
-  display: none;
-}
-
-.ebd-demo-gallery .demo-card {
-  flex: 0 0 calc(25% - 11px);
-  min-width: 0;
-  scroll-snap-align: start;
-}
-
-.ebd-demo-image-btn {
-  display: block;
-  width: 100%;
-  padding: 0;
-  border: 0;
-  background: transparent;
-  cursor: zoom-in;
-  overflow: hidden;
-  border-radius: 12px;
-}
-
-.ebd-demo-image-btn img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
-  border-radius: 12px;
-  border: 1px solid var(--border-gold);
-  transition: transform .25s ease, filter .25s ease, box-shadow .25s ease;
-}
-
-.ebd-demo-image-btn:hover img {
-  transform: scale(1.025);
-  filter: brightness(1.04);
-  box-shadow: 0 12px 35px rgba(0,0,0,.24);
-}
-
-.ebd-gallery-control {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 44px;
-  height: 44px;
-  border: 1px solid var(--border-gold-strong);
-  border-radius: 50%;
-  background: rgba(10,15,28,.94);
-  color: var(--gold-light);
-  font-size: 30px;
-  line-height: 1;
-  display: grid;
-  place-items: center;
-  cursor: pointer;
-  z-index: 4;
-  box-shadow: 0 8px 25px rgba(0,0,0,.28);
-}
-
-.ebd-gallery-control:hover {
-  background: var(--gold);
-  color: #191204;
-}
-
-.ebd-gallery-prev {
-  left: 2px;
-}
-
-.ebd-gallery-next {
-  right: 2px;
-}
-
-@media (max-width: 759px) {
-
-  .ebd-gallery-shell {
-    padding: 0 42px;
-  }
-
-  .ebd-demo-gallery .demo-card {
-    flex: 0 0 calc(50% - 7px);
-  }
-
-  .ebd-gallery-control {
-    width: 38px;
-    height: 38px;
-    font-size: 26px;
-  }
-
-}
-
-@media (max-width: 520px) {
-
-  .ebd-gallery-shell {
-    padding: 0 34px;
-  }
-
-  .ebd-demo-gallery .demo-card {
-    flex: 0 0 82%;
-  }
-
-  .ebd-gallery-control {
-    width: 36px;
-    height: 36px;
-    font-size: 25px;
-  }
-
-}
-
 </style>
 </head>
 <body>
@@ -864,78 +702,60 @@
     <p class="sec-sub">Veja o formato de páginas reais do conteúdo — mapas, reconstruções 3D e explicações bíblicas — antes de desbloquear o acesso completo.</p>
   </div>
   <div class="wrap-wide">
-    <div class="ebd-gallery-shell">
+    <div class="demo-grid ebd-demo-gallery">
 
-      <button
-        class="ebd-gallery-control ebd-gallery-prev"
-        type="button"
-        aria-label="Ver imagens anteriores">
-        ‹
-      </button>
-
-      <div class="demo-grid ebd-demo-gallery">
-        
       <div class="demo-card">
         <button class="ebd-demo-image-btn" type="button" data-demo-index="0">
-          <img src="imagens2/betaniabetfege.webp" alt="Prévia do material EBD 3D" loading="lazy">
+          <img src="images/demo-01.webp" alt="Prévia do material EBD 3D" loading="lazy">
         </button>
-      </div>
-    
-      <div class="demo-card">
-        <button class="ebd-demo-image-btn" type="button" data-demo-index="1">
-          <img src="imagens2/comoeraarca.webp" alt="Prévia do material EBD 3D" loading="lazy">
-        </button>
-      </div>
-    
-      <div class="demo-card">
-        <button class="ebd-demo-image-btn" type="button" data-demo-index="2">
-          <img src="imagens2/modulo7.webp" alt="Prévia do material EBD 3D" loading="lazy">
-        </button>
-      </div>
-    
-      <div class="demo-card">
-        <button class="ebd-demo-image-btn" type="button" data-demo-index="3">
-          <img src="imagens2/montemoria.webp" alt="Prévia do material EBD 3D" loading="lazy">
-        </button>
-      </div>
-    
-      <div class="demo-card">
-        <button class="ebd-demo-image-btn" type="button" data-demo-index="4">
-          <img src="imagens2/neemias.webp" alt="Prévia do material EBD 3D" loading="lazy">
-        </button>
-      </div>
-    
-      <div class="demo-card">
-        <button class="ebd-demo-image-btn" type="button" data-demo-index="5">
-          <img src="imagens2/relevoclima.webp" alt="Prévia do material EBD 3D" loading="lazy">
-        </button>
-      </div>
-    
-      <div class="demo-card">
-        <button class="ebd-demo-image-btn" type="button" data-demo-index="6">
-          <img src="imagens2/rotasantigas.webp" alt="Prévia do material EBD 3D" loading="lazy">
-        </button>
-      </div>
-    
-      <div class="demo-card">
-        <button class="ebd-demo-image-btn" type="button" data-demo-index="7">
-          <img src="imagens2/viagrmpaulo.webp" alt="Prévia do material EBD 3D" loading="lazy">
-        </button>
-      </div>
-    
       </div>
 
-      <button
-        class="ebd-gallery-control ebd-gallery-next"
-        type="button"
-        aria-label="Ver próximas imagens">
-        ›
-      </button>
+      <div class="demo-card">
+        <button class="ebd-demo-image-btn" type="button" data-demo-index="1">
+          <img src="images/demo-02.webp" alt="Prévia do material EBD 3D" loading="lazy">
+        </button>
+      </div>
+
+      <div class="demo-card">
+        <button class="ebd-demo-image-btn" type="button" data-demo-index="2">
+          <img src="images/demo-03.webp" alt="Prévia do material EBD 3D" loading="lazy">
+        </button>
+      </div>
+
+      <div class="demo-card">
+        <button class="ebd-demo-image-btn" type="button" data-demo-index="3">
+          <img src="images/demo-04.webp" alt="Prévia do material EBD 3D" loading="lazy">
+        </button>
+      </div>
+
+      <div class="demo-card">
+        <button class="ebd-demo-image-btn" type="button" data-demo-index="4">
+          <img src="images/demo-05.webp" alt="Prévia do material EBD 3D" loading="lazy">
+        </button>
+      </div>
+
+      <div class="demo-card">
+        <button class="ebd-demo-image-btn" type="button" data-demo-index="5">
+          <img src="images/demo-06.webp" alt="Prévia do material EBD 3D" loading="lazy">
+        </button>
+      </div>
+
+      <div class="demo-card">
+        <button class="ebd-demo-image-btn" type="button" data-demo-index="6">
+          <img src="images/demo-07.webp" alt="Prévia do material EBD 3D" loading="lazy">
+        </button>
+      </div>
+
+      <div class="demo-card">
+        <button class="ebd-demo-image-btn" type="button" data-demo-index="7">
+          <img src="images/demo-08.webp" alt="Prévia do material EBD 3D" loading="lazy">
+        </button>
+      </div>
 
     </div>
 
     <p class="demo-note">
-      Veja algumas prévias do conteúdo visual disponível no EBD 3D.
+      Estas são algumas prévias do conteúdo visual disponível no EBD 3D.
     </p>
 
     <div class="center-btn">
